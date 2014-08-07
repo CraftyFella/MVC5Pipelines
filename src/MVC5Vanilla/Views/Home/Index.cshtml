@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Hello and welcome to the MVC Pipeline demo</h2>
+<h3>Custom Pipeline Approach</h3>
+<ul>
+    <li>@Html.ActionLink("Validation Demo", "Get", "CustomApproach")</li>
+    <li>@Html.ActionLink("Not Found Demo", "Get", "CustomApproach", new { Id = Guid.Parse("0c58f7c6-b6df-4140-bd56-a20e5ac312b9"), Name = "Hello" }, null)</li>
+    <li>@Html.ActionLink("Success", "Get", "CustomApproach", new { Id = Guid.Parse("cc58f7c6-b6df-4140-bd56-a20e5ac312b9"), Name = "Hello" }, null)</li>
+</ul>
+
+<h3>Standard MVC Style Pipeline Approach (Action Filters etc)</h3>
+<ul>
+    <li>@Html.ActionLink("Validation Demo", "Get", "StandardApproach")</li>
+    <li>@Html.ActionLink("Not Found Demo", "Get", "StandardApproach", new { Id = Guid.Parse("0c58f7c6-b6df-4140-bd56-a20e5ac312b9"), Name = "Hello" }, null)</li>
+    <li>@Html.ActionLink("Success", "Get", "StandardApproach", new { Id = Guid.Parse("cc58f7c6-b6df-4140-bd56-a20e5ac312b9"), Name = "Hello" }, null)</li>
+</ul>
+
+

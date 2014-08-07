@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
+using System.Net;
 using System.Web.Mvc;
+using MVC5Vanilla.Controllers;
 using MVC5Vanilla.Controllers.Standard;
 using Newtonsoft.Json;
 
@@ -29,7 +31,7 @@ namespace MVC5Vanilla.Config.Standard
                 ContentType = "application/json"
             };
 
-            filterContext.HttpContext.Response.StatusCode = 400;
+            filterContext.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             filterContext.Result = result;
         }
 

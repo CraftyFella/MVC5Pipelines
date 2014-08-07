@@ -1,7 +1,8 @@
 ﻿using System.Web.Mvc;
 using MVC5Vanilla.Config.Custom;
+using MVC5Vanilla.Controllers.Custom;
 
-namespace MVC5Vanilla.Controllers.Custom
+namespace MVC5Vanilla.Controllers
 {
     public class CustomApproachController : Controller
     {

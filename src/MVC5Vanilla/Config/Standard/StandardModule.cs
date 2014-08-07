@@ -8,9 +8,9 @@ namespace MVC5Vanilla.Config.Standard
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<AutoFacValidatorFactory>().As<IValidatorFactory>();
-            builder.RegisterType<ThingExistsActionFilter>().AsImplementedInterfaces();
             builder.RegisterType<ValidatorActionFilter>().AsImplementedInterfaces();
-
+            builder.RegisterType<ThingExistsActionFilter>().AsImplementedInterfaces();
+            
             base.Load(builder);
         }
     }

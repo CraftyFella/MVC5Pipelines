@@ -17,7 +17,8 @@ namespace MVC5Vanilla.Config.Standard
         {
             object instance;
             _componentContext.TryResolve(validatorType, out instance);
-            return instance as IValidator;
+            var validator = instance as IValidator;
+            return validator;
         }
     }
 }

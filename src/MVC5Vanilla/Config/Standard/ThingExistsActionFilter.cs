@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
+using MVC5Vanilla.Controllers;
 using MVC5Vanilla.Controllers.Standard;
 
 namespace MVC5Vanilla.Config.Standard
