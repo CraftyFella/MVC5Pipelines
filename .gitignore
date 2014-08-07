@@ -11,10 +11,6 @@ reports/
 *DotSettings.user
 src/**/[Dd]ebug/
 src/**/[Rr]elease/
-/src/CTM.Home.Web/Scripts/.idea/*
-/src/**/TestResults/
-/src/TestResults/
-*.webtestresult
 *.sln.cache
 *.suo
 *.csproj.user
@@ -26,7 +22,6 @@ src/**/build/
 src/**/bin/
 **/bin/*
 buildOutput
-src/CTM.Home.Version/ApplicationVersionInfo.cs
 src/**/*.orig
 .sass-cache/
 tools/NUnit/TestResult.xml
